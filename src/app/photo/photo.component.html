@@ -1,0 +1,44 @@
+<!--<h2>My Photos</h2>
+<ul class="photos">
+  <li *ngFor="let photo of photo">
+    <span class="badge">{{photo.id}}</span> {{photo.name}}
+  </li>
+</ul>
+
+-->
+<div>
+    <div>
+        <div class='row'>
+            <div>
+              Search by:
+                <input type='text' [(ngModel)] = "photoTitle" />
+                <button (click)="searchPhoto()">Search</button>
+            </div>
+            
+        </div>
+    </div>    
+    <div>
+        <table class='table'
+                *ngIf='response'>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Owner</th>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='let photo of response.photos.photo'>
+                    <td>{{photo.id}}</td>
+                    <td>{{photo.owner}}</td>
+                    <td>{{photo.title}}</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+</div>
+
+
+
