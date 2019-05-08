@@ -22,15 +22,13 @@
                 *ngIf='response'>
             <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Owner</th>
+                    <th>Picture<th>
                     <th>Title</th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor='let photo of response.photos.photo'>
-                    <td>{{photo.id}}</td>
-                    <td>{{photo.owner}}</td>
+                    <td><img src='https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_s.jpg'></td>
                     <td>{{photo.title}}</td>
                 </tr>
             </tbody>
