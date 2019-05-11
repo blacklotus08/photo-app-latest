@@ -30,9 +30,7 @@
                 <tr *ngFor='let photo of response.photos.photo'>
                     <td>
                       <a routerLink="/detail/{{photo.id}}">
-                      <img src='https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_s.jpg'
-                      
-                    ></a></td>
+                      <img src='https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}_s.jpg'></a></td>
                     <td>{{photo.title}}</td>
                 </tr>
             </tbody>

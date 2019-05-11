@@ -1,5 +1,10 @@
-<p>
-photo-detail works!
-</p>
+<div *ngIf="response">
   <button (click)="goBack()">go back</button>
-  
+
+  <h2>Photo Details</h2>
+  <img src='https://farm{{response.photo.farm}}.staticflickr.com/{{response.photo.server}}/{{response.photo.id}}_{{response.photo.secret}}.jpg'>
+  <div><span>ID: </span>{{response.photo.id}}</div>
+  <div><span>Server: </span>{{response.photo.server}}</div>
+  <div><span>Title: </span>{{response.photo.title._content}}</div>
+</div>
+
