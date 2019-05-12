@@ -2,7 +2,13 @@ p {
   font-family: Lato;
 }
 
+header {
+  display: block;
+}
 
-.header {
+.header-title {
   justify-content: center;
+  display:flex;
+  flex-wrap:wrap;
+  background-color: #C7CBCF;
 }

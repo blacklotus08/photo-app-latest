@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Photo App';
+  name = 'Photo Gallery App';
 
   constructor() {}
 
