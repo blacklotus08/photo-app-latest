@@ -17,7 +17,7 @@ export class PhotoComponent implements OnInit {
   ngOnInit() {}
 
   searchPhoto() {
-    this.http.get('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=1c7b3ffed3009239dad4c3cfa738c808&text='+ this.photoTitle +'&format=json&nojsoncallback=1')
+    this.http.get('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=c026dd7bca3616e7d660ba20c445b11a&format=json&nojsoncallback=1&text=' + this.photoTitle)
     .subscribe((response :Array<any>[]) => {
       
       this.response = response;
@@ -25,10 +25,6 @@ export class PhotoComponent implements OnInit {
       
     });
   }
-
-  displayPhotoDetail() {
-     alert('inside');
-  }  
 
 
 }

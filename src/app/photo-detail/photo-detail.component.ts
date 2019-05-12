@@ -27,7 +27,7 @@ export class PhotoDetailComponent implements OnInit {
 
   getPhoto(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.http.get('https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=1c7b3ffed3009239dad4c3cfa738c808&photo_id=' + id + '&format=json&nojsoncallback=1')
+    this.http.get('https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=c026dd7bca3616e7d660ba20c445b11a&format=json&nojsoncallback=1&photo_id=' + id)
     .subscribe((response :Array<any>[]) => {
       
       this.response = response;
