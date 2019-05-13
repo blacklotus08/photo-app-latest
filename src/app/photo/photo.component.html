@@ -5,7 +5,7 @@
     <input type='text' [(ngModel)] = "photoTitle" />
     <button (click)="searchPhoto()">Search</button>
   </div>
-  <div class="content">
+  <div class="content" *ngIf="response.stat == 'ok'">
     <div class="media" *ngFor='let photo of response.photos.photo'>
 				<a routerLink="/detail/{{photo.id}}">
           <img src='https://farm{{photo.farm}}.staticflickr.com/{{photo.server}}/{{photo.id}}_{{photo.secret}}.jpg'>

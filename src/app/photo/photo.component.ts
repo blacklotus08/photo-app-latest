@@ -22,7 +22,9 @@ export class PhotoComponent implements OnInit {
     .subscribe((response :Array<any>[]) => {
       this.response = response;
       console.log(response);
-    });
+    }
+    );
+    
   }
 
 
