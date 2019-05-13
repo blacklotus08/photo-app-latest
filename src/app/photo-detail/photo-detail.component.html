@@ -1,10 +1,15 @@
-<div *ngIf="response">
-  <button (click)="goBack()">go back</button>
-
-  <h2>Photo Details</h2>
-  <img src='https://farm{{response.photo.farm}}.staticflickr.com/{{response.photo.server}}/{{response.photo.id}}_{{response.photo.secret}}.jpg'>
-  <div><span>ID: </span>{{response.photo.id}}</div>
-  <div><span>Server: </span>{{response.photo.server}}</div>
-  <div><span>Title: </span>{{response.photo.title._content}}</div>
+<div *ngIf="response" class="container">
+ <!-- <button (click)="goBack()">go back</button>
+  -->
+  <div class="left-column">
+    <img src='https://farm{{response.photo.farm}}.staticflickr.com/{{response.photo.server}}/{{response.photo.id}}_{{response.photo.secret}}.jpg'>
+   </div> 
+   <div class="right-column">
+      <div class="photo-detail">
+        <span>Photo Detail</span>
+        <h1>Title : {{response.photo.title._content}}</h1>
+      </div>
+      <div><span>ID: </span>{{response.photo.id}}</div>
+      <div><span>Server: </span>{{response.photo.server}}</div>
 </div>
 

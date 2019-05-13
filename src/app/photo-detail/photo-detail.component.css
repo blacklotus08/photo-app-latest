@@ -1,0 +1,41 @@
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#ececec;
+  font-family: Lato;
+
+}
+
+/* Columns */
+.left-column {
+  padding-left: 10px;
+  padding-top:10px;
+  width: 50%;
+  position: relative;
+}
+ 
+.right-column {
+  width: 40%;
+  margin-top:10px;
+}
+
+/* Photo Detail */
+.photo-detail {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+}
+
+.photo-detail span {
+  font-size: 20px;
+  color: #358ED7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.photo-detail h1 {
+  font-weight: 300;
+  font-size: 30px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
