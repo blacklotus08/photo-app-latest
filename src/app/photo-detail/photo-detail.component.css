@@ -39,3 +39,24 @@
   color: #43484D;
   letter-spacing: -2px;
 }
+
+.button-main {
+  border-top: 1px solid #E1E8EE;
+  margin-top: 20px;
+  padding-top:10px
+}
+
+.back-btn {
+  display: inline-block;
+  background-color: #7DC855;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 8px 20px;
+  transition: all .5s;
+}
+.back-btn:hover {
+  background-color: #64af3d;
+}
+
