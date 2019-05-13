@@ -41,7 +41,7 @@ label {
 
 p, label , input {
   font-family: Lato;
-}v{}
+}
 
 div {
   margin: 0;
@@ -52,8 +52,8 @@ div {
   vertical-align: baseline;
 }
 
-.content {
-  width:50%;
+.gallery {
+  min-height: 37em;
 }
 
 .search-filter {
@@ -63,17 +63,15 @@ div {
   padding-bottom:10px;
 }
 
-
 .content{
-  /*flex-wrap: wrap;*/
-  margin-left: 10px;
-  /*justify-content: flex-start;*/
-  display: inline-block;
-  width:100%;
+  margin-left:25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .media {
-  margin-bottom: 0;
+  margin-bottom: 10px;
   width: 25%;
 }
 .media img {
