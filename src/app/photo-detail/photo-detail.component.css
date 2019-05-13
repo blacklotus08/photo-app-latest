@@ -4,20 +4,21 @@
   flex-wrap: wrap;
   background-color:#ececec;
   font-family: Lato;
+  min-height:35.3rem;
 
 }
 
 /* Columns */
 .left-column {
   padding-left: 10px;
-  padding-top:10px;
+  padding-top:20px;
   width: 50%;
   position: relative;
 }
  
 .right-column {
   width: 40%;
-  margin-top:10px;
+  margin-top:20px;
 }
 
 /* Photo Detail */
