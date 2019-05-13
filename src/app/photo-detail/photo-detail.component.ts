@@ -10,6 +10,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class PhotoDetailComponent implements OnInit {
   response : Array<any>[];
+  httpURL : string = 'https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=c026dd7bca3616e7d660ba20c445b11a&format=json&nojsoncallback=1&photo_id=';
 
   constructor(
     private route: ActivatedRoute,
@@ -27,7 +28,7 @@ export class PhotoDetailComponent implements OnInit {
 
   getPhoto(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.http.get('https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=c026dd7bca3616e7d660ba20c445b11a&format=json&nojsoncallback=1&photo_id=' + id)
+    this.http.get(this.httpURL + id)
     .subscribe((response :Array<any>[]) => {
       
       this.response = response;
