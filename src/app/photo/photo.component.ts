@@ -10,7 +10,7 @@ import {HttpClient} from '@angular/common/http';
 export class PhotoComponent implements OnInit {
 
   photoTitle : string = '';
-  httpURL : string = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=f843076116700f4726a1512067694366&format=json&nojsoncallback=1&';
+  httpURL : string = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=72c0da2bfb05ece751a7784cd81f49bc&format=json&nojsoncallback=1';
   response : Array<any>[];
   
   
@@ -19,7 +19,7 @@ export class PhotoComponent implements OnInit {
   ngOnInit() {}
 
   searchPhoto() {
-    this.http.get(this.httpURL + 'text=' + this.photoTitle)
+    this.http.get(this.httpURL + '&text=' + this.photoTitle)
     .subscribe((response :Array<any>[]) => {
       this.response = response;
       console.log(response);
