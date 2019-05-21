@@ -10,7 +10,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class PhotoDetailComponent implements OnInit {
   response : Array<any>[];
-  httpURL : string = 'https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=f843076116700f4726a1512067694366&format=json&nojsoncallback=1';
+  httpURL : string = 'https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=72c0da2bfb05ece751a7784cd81f49bc&format=json&nojsoncallback=1';
 
   constructor(
     private route: ActivatedRoute,
